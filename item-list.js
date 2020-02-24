@@ -11,6 +11,10 @@
     return this.items
   }
 
+  ItemList.prototype.addNewItem = function(text){
+    this.addItem(new Item(text))
+  }
+
   exports.ItemList = ItemList
 
 })(this)
