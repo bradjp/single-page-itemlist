@@ -1,7 +1,6 @@
 (function (exports){
   function ItemController(itemList){
     this.itemList = itemList
-    itemList.addNewItem('Some stuff')
     itemLV = new ItemListView(itemList)
     this.itemLV = itemLV
   }
