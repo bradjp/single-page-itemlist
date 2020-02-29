@@ -1,0 +1,77 @@
+.inputform{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: #F7F7F7;
+}
+.inputform h1{
+	background: rgb(201, 131, 223);
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+.inputform input[type="text"],
+.inputform input[type="date"],
+.inputform input[type="datetime"],
+.inputform input[type="email"],
+.inputform input[type="number"],
+.inputform input[type="search"],
+.inputform input[type="time"],
+.inputform input[type="url"],
+.inputform textarea,
+.inputform select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.inputform input[type="text"]:focus,
+.inputform input[type="date"]:focus,
+.inputform input[type="datetime"]:focus,
+.inputform input[type="email"]:focus,
+.inputform input[type="number"]:focus,
+.inputform input[type="search"]:focus,
+.inputform input[type="time"]:focus,
+.inputform input[type="url"]:focus,
+.inputform textarea:focus,
+.inputform select:focus
+{
+	box-shadow: 0 0 5px #43D1AF;
+	padding: 3%;
+	border: 1px solid rgb(201, 131, 223);
+}
+
+.inputform input[type="submit"],
+.inputform input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: rgb(201, 131, 223);
+	border-bottom: 2px solid rgb(75, 48, 194);
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+}
+.inputform input[type="submit"]:hover,
+.inputform input[type="button"]:hover{
+	background: rgb(201, 131, 223);
+}
