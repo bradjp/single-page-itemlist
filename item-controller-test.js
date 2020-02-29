@@ -1,7 +1,7 @@
 function canCreateItemController() {
-  itemList = new ItemList
-  itemList.addNewItem('Some stuff')
-  itemC = new ItemController(itemList)
+  itemListTest = new ItemList
+  itemListTest.addNewItem('Some stuff')
+  itemC = new ItemController(itemListTest)
   assert.isTrue(itemC.itemList.items[0].text === 'Some stuff')
 }
 

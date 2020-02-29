@@ -1,8 +1,9 @@
 (function (exports){
   function ItemController(itemList){
     this.itemList = itemList
-    itemLV = new ItemListView(itemList)
+    itemLV = new ItemListView(itemList)    
     this.itemLV = itemLV
+
   }
   ItemController.prototype.insertHTML = function(){
     html = this.itemLV.toHTML();    
@@ -39,9 +40,20 @@
     }
 }
 
+  window.addEventListener('submit', function(event) {
+    text = event.target[0].value
+    event.preventDefault();
+    controller.itemList.addNewItem(text)
+    controller.insertHTML()
+  
+  });
+  controller = new ItemController(new ItemList)
+
   makeUrlChangeShowItemForCurrentPage()
 
   exports.ItemController = ItemController
   exports.makeUrlChangeShowItemForCurrentPage = makeUrlChangeShowItemForCurrentPage
   exports.search = search
 })(this)
+
+// adds a new note to the note list and updates the app element to show the note list as HTML.

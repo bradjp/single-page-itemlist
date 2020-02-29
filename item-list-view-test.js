@@ -1,8 +1,8 @@
 function ItemListViewTest(){
-  itemLV = new ItemList
-  itemLV.addNewItem('Hello')
-  itemLV = new ItemListView(itemLV)
-  assert.isTrue(itemLV.toHTML() === '<ul><li><div><a href="#items/6">Hello</a></div></li></ul>')
+  itemLVTest = new ItemList
+  itemLVTest.addNewItem('Hello')
+  itemLVTest = new ItemListView(itemLVTest)
+  assert.isTrue(itemLVTest.toHTML() === '<ul><li><div><a href="#items/6">Hello</a></div></li></ul>')
   
 }
 
@@ -17,4 +17,3 @@ function ItemListViewTestFirstTwenty(){
 
 ItemListViewTestFirstTwenty()
 
-//<a href="#tiger">Tiger</a>

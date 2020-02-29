@@ -1,21 +1,21 @@
 function newItemListLengthCheck() {
-  anItem = new Item('Hello')
-  itemList = new ItemList
-  itemList.addItem(anItem)
-  assert.isTrue(itemList.getItems().length === 1)
+  anItemTest = new Item('Hello')
+  itemListTest = new ItemList
+  itemListTest.addItem(anItemTest)
+  assert.isTrue(itemListTest.getItems().length === 1)
 }
 
 function newItemListItemCheck() {
-  anItem = new Item('Hello')
-  itemList = new ItemList
-  itemList.addItem(anItem)
-  assert.isTrue(itemList.getItems()[0].text === 'Hello')
+  anItemTest = new Item('Hello')
+  itemListTest = new ItemList
+  itemListTest.addItem(anItemTest)
+  assert.isTrue(itemListTest.getItems()[0].text === 'Hello')
 }
 
 function newItemListAddNewItem() {
-  itemList = new ItemList
-  itemList.addNewItem('Hello')
-  assert.isTrue(itemList.getItems()[0].text === 'Hello')
+  itemListTest = new ItemList
+  itemListTest.addNewItem('Hello')
+  assert.isTrue(itemListTest.getItems()[0].text === 'Hello')
 }
 
 newItemListLengthCheck()
