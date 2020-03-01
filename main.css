@@ -7,7 +7,7 @@ body{
 	font-size: 140%;
 	font-weight: 300;
 	text-align: center;
-	color: rgb(54, 48, 48);
+	color: rgb(32, 66, 138);
 }
 
 .inputform{
@@ -15,7 +15,7 @@ body{
 	max-width: 400px;
 	margin: 10px auto;
 	padding: 100px;
-	background: rgb(182, 184, 185);
+	background: rgb(48, 143, 190);
 }
 .inputform h1{
 	background: rgb(113, 111, 114);
