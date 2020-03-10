@@ -3,7 +3,6 @@
     this.itemList = itemList
     itemLV = new ItemListView(itemList)    
     this.itemLV = itemLV
-
   }
   ItemController.prototype.insertHTML = function(){
     html = this.itemLV.toHTML();    
@@ -29,7 +28,6 @@
     document
       .getElementById("app")
       .innerHTML = x.text
-      
   };
 
   function search(IDKey, arr){
@@ -45,7 +43,6 @@
     event.preventDefault();
     controller.itemList.addNewItem(text)
     controller.insertHTML()
-  
   });
   controller = new ItemController(new ItemList)
 

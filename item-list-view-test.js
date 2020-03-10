@@ -3,7 +3,6 @@ function ItemListViewTest(){
   itemLVTest.addNewItem('Hello')
   itemLVTest = new ItemListView(itemLVTest)
   assert.isTrue(itemLVTest.toHTML() === '<ul><li><div><a href="#items/6">Hello</a></div></li></ul>')
-  
 }
 
 ItemListViewTest()
